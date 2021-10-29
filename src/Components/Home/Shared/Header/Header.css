@@ -1,0 +1,20 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #003580;
+    padding: 30px;
+}
+
+.header-container h1{
+    color: beige;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+.header-container a{
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 20px;
+    Margin-top: 20px;
+}

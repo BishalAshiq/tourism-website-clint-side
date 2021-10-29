@@ -5,6 +5,8 @@ import Header from './Components/Home/Shared/Header/Header';
 import Home from './Components/Home/Home/Home';
 import AboutUs from './Components/Home/About Us/AboutUs';
 import Login from './Components/Login/Login/Login';
+import NotFound from './Components/NotFound/NotFound';
+import Footer from './Components/Home/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -21,7 +23,11 @@ function App() {
          <Route path="/login">
          <Login></Login>
          </Route>
+         <Route path="*">
+           <NotFound></NotFound>
+         </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
