@@ -1,0 +1,15 @@
+.login{
+    margin: 100px 160px 20px 100px;
+    border: 2px solid skyblue;
+    padding: 20px 60px 20px 60px;
+    background-color: skyblue;
+}
+.login button{
+    background-color: tomato;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    padding: 5px 15px;
+
+}
