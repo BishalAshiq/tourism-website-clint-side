@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Service.css'
 
 const Service = ({service}) => {
-    const [id,img, name, description] = service;
+    const {_id,img, name, price, description} = service;
     return (
         <div>
             <img src={img} alt=""/>
             <h2>{name}</h2>
+            <h6>{price}</h6>
             <p>{description}</p>
-            <Link to={`/booking/${id}`}> <button>Book {name.toLowerCase()}</button></Link>
+            <Link to={`/booking/${_id}`}> <button>Book {name.toLowerCase()}</button></Link>
         </div>
     );
 };
