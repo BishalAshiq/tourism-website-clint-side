@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import './Booking.css'
+import './Booking.css';
 
 const Booking = () => {
      const {serviceId} = useParams(); 
@@ -10,7 +10,7 @@ const Booking = () => {
          fetch(`https://limitless-reaches-36634.herokuapp.com/${serviceId}`)
          .then(res=>res.json())
          .then(data => setService(data))
-     },[])
+     },[]);
      
     return (
         <div>

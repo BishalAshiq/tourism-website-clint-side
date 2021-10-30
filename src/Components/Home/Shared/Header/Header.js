@@ -13,10 +13,12 @@ const Header = () => {
             <div>
                 <Link to="/home">Home</Link>
                 <Link to="/about">About US</Link>
+                <Link to="/addService">Add Service</Link>
+                <Link to="/manageServices">Manage Services</Link>
                 <Link to="/login">Login</Link>
                 <span className='text-white'>{user.displayName} </span>
                 {user?.email && <button className='btn btn-info' onClick={logOut}>Log Out</button>}
-                <Link to="/admin"><button className='btn btn-dark'>Admin</button></Link>
+               
             </div>
         </div>
     );
