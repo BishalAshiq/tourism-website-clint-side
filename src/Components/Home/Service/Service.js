@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    const {id,img, name, description} = service;
+    const [id,img, name, description] = service;
     return (
         <div>
             <img src={img} alt=""/>

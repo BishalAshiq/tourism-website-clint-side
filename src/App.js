@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './Components/Home/Shared/Header/Header';
@@ -9,6 +8,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Home/Shared/Footer/Footer';
 import Register from './Components/Login/Register/Register';
 import Booking from './Components/Booking/Booking';
+import AddService from './Components/AddService/AddService';
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
       <Router>
          <Header></Header>
         <Switch>
+         <Route exact path="/">
+         <Home></Home>
+         </Route>
          <Route path="/home">
          <Home></Home>
          </Route>
@@ -31,6 +34,9 @@ function App() {
          {/* it might be private route */}
          <Route path="/booking/:serviceId">
             <Booking></Booking>  
+         </Route>
+         <Route path="/addService">
+           <AddService></AddService>
          </Route>
          <Route path="*">
            <NotFound></NotFound>
