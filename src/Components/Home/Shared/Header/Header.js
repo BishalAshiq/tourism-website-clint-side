@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
+
 import './Header.css'
 const Header = () => {
+    const {user, logOut} = useAuth();
     return (
         <div className='header-container'>
             <div>
@@ -11,7 +14,8 @@ const Header = () => {
                 <Link to="/home">Home</Link>
                 <Link to="/about">About US</Link>
                 <Link to="/login">Login</Link>
-                <button>Log Out</button>
+                <span className='text-white'>{user.displayName} </span>
+                {user?.email && <button className='btn btn-info' onClick={logOut}>Log Out</button>}
             </div>
         </div>
     );

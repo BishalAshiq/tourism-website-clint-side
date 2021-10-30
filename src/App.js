@@ -9,10 +9,13 @@ import Footer from './Components/Home/Shared/Footer/Footer';
 import Register from './Components/Login/Register/Register';
 import Booking from './Components/Booking/Booking';
 import AddService from './Components/AddService/AddService';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
          <Header></Header>
         <Switch>
@@ -32,9 +35,9 @@ function App() {
            <Register></Register>
          </Route>
          {/* it might be private route */}
-         <Route path="/booking/:serviceId">
+         <PrivateRoute path="/booking/:serviceId">
             <Booking></Booking>  
-         </Route>
+         </PrivateRoute>
          <Route path="/addService">
            <AddService></AddService>
          </Route>
@@ -44,6 +47,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
     </div>
   );
 }
