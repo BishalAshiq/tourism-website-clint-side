@@ -8,6 +8,7 @@ import Login from './Components/Login/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Footer from './Components/Home/Shared/Footer/Footer';
 import Register from './Components/Login/Register/Register';
+import Booking from './Components/Booking/Booking';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
          </Route>
          <Route path="/register">
            <Register></Register>
+         </Route>
+         {/* it might be private route */}
+         <Route path="/booking/:serviceId">
+            <Booking></Booking>  
          </Route>
          <Route path="*">
            <NotFound></NotFound>

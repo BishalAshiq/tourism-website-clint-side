@@ -1,0 +1,10 @@
+.destination img{
+    width: 500px;
+    border-radius: 20px;
+    margin: 10px;
+ }
+ 
+ .img{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr); 
+ }
