@@ -42,9 +42,9 @@ function App() {
          <PrivateRoute path="/addService">
            <AddService></AddService>
          </PrivateRoute>
-         <Route path="/manageServices">
+         <PrivateRoute path="/manageServices">
           <ManageServices></ManageServices>
-         </Route>
+         </PrivateRoute>
          <Route path="*">
            <NotFound></NotFound>
          </Route>
