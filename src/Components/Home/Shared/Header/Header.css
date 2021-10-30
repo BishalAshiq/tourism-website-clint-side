@@ -18,3 +18,14 @@
     padding: 20px;
     Margin-top: 20px;
 }
+@media only screen and (max-width:688px) {
+    .header-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .header-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

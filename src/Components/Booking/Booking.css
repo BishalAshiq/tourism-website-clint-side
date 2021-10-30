@@ -1,0 +1,21 @@
+.booking-service{
+    border: 2px solid gray;
+    background-color: rgb(3, 138, 156);
+    color: honeydew;
+}
+.booking-service h2{
+    background-color: rgb(16, 107, 138);
+    padding: 20px;
+    margin: 0px 260px;
+    box-shadow: 5px 0px 5px 5px rgb(61, 163, 177);
+}
+.booking-service img{
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.booking-service p{
+    margin-top: 20px;
+
+}
